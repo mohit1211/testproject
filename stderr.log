@@ -1,0 +1,29 @@
+Low-memory action set to fork
+Using 64bit VM settings, min.heap=1024MB, min permgen=256MB, default fork arguments=[-Xmx1024m, -XX:MaxPermSize=256m]
+**** WARNING: insufficent heap memory ******************************************
+The JVM reports 910 MB but we recommend at least 1024 MB +/- 20
+Use your JVM's heap size option (like -Xmx1024M) to set that size.
+Will fork a JVM to get enough memory.
+********************************************************************************
+Available memory below specified limits and low-memory action set to fork, will fork to get enough memory
+Not forking JVM as -nofork option is set
+Setting properties from filename 'D:/AEM instances/SASSI/Publish_New/cq-publish-4503.jar'
+Option '-quickstart.server.port' set to '4503' from filename cq-publish-4503.jar
+Option '-r' set to 'publish' from filename cq-publish-4503.jar
+Setting 'sling.run.modes' to 'publish' from filename.
+Verbose option not active, closing stdin and redirecting stdout and stderr
+Redirecting stdout to D:\AEM instances\SASSI\Publish_New\crx-quickstart\logs\stdout.log
+Redirecting stderr to D:\AEM instances\SASSI\Publish_New\crx-quickstart\logs\stderr.log
+ResourceProvider paths=[/gui, /gui/default]
+RAWProcessor succesfully installed
+03.01.2018 07:29:05.522 *ERROR* [FelixStartLevel] ERROR: Error starting jcrinstall:/apps/acs-commons/install/acs-aem-commons-bundle-twitter-2.0.0.jar (org.osgi.framework.BundleException: Unresolved constraint in bundle com.adobe.acs.acs-aem-commons-bundle-twitter [446]: Unable to resolve 446.0: missing requirement [446.0] osgi.wiring.package; (&(osgi.wiring.package=twitter4j)(version>=3.0.5)(!(version>=4.0.0))))
+org.osgi.framework.BundleException: Unresolved constraint in bundle com.adobe.acs.acs-aem-commons-bundle-twitter [446]: Unable to resolve 446.0: missing requirement [446.0] osgi.wiring.package; (&(osgi.wiring.package=twitter4j)(version>=3.0.5)(!(version>=4.0.0)))
+	at org.apache.felix.framework.Felix.resolveBundleRevision(Felix.java:4095)
+	at org.apache.felix.framework.Felix.startBundle(Felix.java:2114)
+	at org.apache.felix.framework.Felix.setActiveStartLevel(Felix.java:1368)
+	at org.apache.felix.framework.FrameworkStartLevelImpl.run(FrameworkStartLevelImpl.java:308)
+	at java.lang.Thread.run(Unknown Source)
+Opening browser using cmd=rundll32 url.dll,FileProtocolHandler "http://localhost:4503/"
+Startup time:112 seconds
+http://localhost:4503/
+Quickstart started
